@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 
-import { SpeechRecognizer } from "../../src";
+import { SpeechRecognizer, SpeechSynthesizer } from "../../src";
 
 import "./index.css";
 
@@ -35,6 +35,28 @@ class Demo extends Component {
                 Começa a ouvir
                 <button type="button" onClick={start}>
                   start
+                </button>
+              </div>
+            );
+          }}
+        />
+
+        <hr />
+
+        <SpeechSynthesizer
+          render={({ isPlaying, speak, getVoices }) => {
+            if (isPlaying) {
+              return <div>PLAYING</div>;
+            }
+            console.log(getVoices());
+            return (
+              <div>
+                PLAY Hello World!
+                <button
+                  type="button"
+                  onClick={speak.bind(this, "Hey Martinez! Suck my balls!")}
+                >
+                  SPEAK
                 </button>
               </div>
             );

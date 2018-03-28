@@ -21,7 +21,11 @@ const siteConfig = {
   url: "https://facebook.github.io" /* your website url */,
   baseUrl: "/test-site/" /* base url for your project */,
   projectName: "test-site",
-  headerLinks: [{ doc: "installation", label: "Docs" }, { search: true }],
+  headerLinks: [
+    { doc: "installation", label: "Docs" },
+    { search: true },
+    { href: "https://github.com/JoaoCnh/react-speech", label: "GitHub" }
+  ],
   users,
   /* path to images for header/footer */
   headerIcon: "img/docusaurus.svg",

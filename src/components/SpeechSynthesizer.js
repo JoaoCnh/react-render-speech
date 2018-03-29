@@ -9,17 +9,24 @@ export default class SpeechSynthesizer extends Component {
   };
 
   static propTypes = {
-    lang: PropTypes.string,
     render: PropTypes.func.isRequired
   };
 
-  static defaultProps = {
-    lang: "en-US"
-  };
+  _speak = subject => {
+    let utterance = subject;
 
-  _speak = text => {
-    this.utterance.text = text;
-    this.synth.speak(this.utterance);
+    if (typeof utterance !== "SpeechSynthesisUtterance") {
+      utterance = new SpeechSynthesisUtterance();
+
+      utterance.text = subject;
+      utterance.lang = "en-US";
+      utterance.onstart = this._handleStart;
+      utterance.onpause = this._handlePause;
+      utterance.onend = this._handlePause;
+      utterance.onresume = this._handleStart;
+    }
+
+    this.synth.speak(utterance);
   };
 
   _handleStart = () => {
@@ -58,12 +65,6 @@ export default class SpeechSynthesizer extends Component {
     }
 
     this.synth = speechSynthesis;
-    this.utterance = new SpeechSynthesisUtterance();
-    this.utterance.lang = this.props.lang;
-    this.utterance.onstart = this._handleStart;
-    this.utterance.onpause = this._handlePause;
-    this.utterance.onend = this._handlePause;
-    this.utterance.onresume = this._handleStart;
   }
 
   render() {

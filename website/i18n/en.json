@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "A website for testing",
+    "tagline": "A package that gives you easy access to the SpeechRecognition and SpeechSynthesis APIs in your React app.",
     "api-reference": "API Reference",
     "doc4": "Other Document",
     "doc5": "Fifth Document",

@@ -44,11 +44,11 @@ class Demo extends Component {
         <hr />
 
         <SpeechSynthesizer
-          render={({ isPlaying, speak, getVoices }) => {
+          render={({ isPlaying, speak }) => {
             if (isPlaying) {
               return <div>PLAYING</div>;
             }
-            console.log(getVoices());
+
             return (
               <div>
                 PLAY Hello World!

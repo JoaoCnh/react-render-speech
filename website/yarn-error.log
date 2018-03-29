@@ -2,7 +2,7 @@ Arguments:
   /home/joao/.nvm/versions/node/v8.1.4/bin/node /usr/share/yarn/bin/yarn.js start
 
 PATH: 
-  /home/joao/.rvm/gems/ruby-2.3.3/bin:/home/joao/.rvm/gems/ruby-2.3.3@global/bin:/home/joao/.rvm/rubies/ruby-2.3.3/bin:/home/joao/bin:/home/joao/.local/bin:/home/joao/.local/bin/luna-studio:/home/joao/.phpbrew/php/php-5.4.45/bin:/home/joao/.phpbrew/bin:/home/joao/.nvm/versions/node/v8.1.4/bin:/home/joao/bin:/home/joao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/joao/.rvm/bin
+  /home/joao/.rvm/gems/ruby-2.3.3/bin:/home/joao/.rvm/gems/ruby-2.3.3@global/bin:/home/joao/.rvm/rubies/ruby-2.3.3/bin:/home/joao/bin:/home/joao/.local/bin:/home/joao/.local/bin/luna-studio:/home/joao/.phpbrew/php/php-5.4.45/bin:/home/joao/.phpbrew/bin:/home/joao/.nvm/versions/node/v8.1.4/bin:/home/joao/bin:/home/joao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/joao/.rvm/bin:/snap/bin:/home/joao/.rvm/bin:/home/joao/.rvm/bin
 
 Yarn version: 
   1.5.1
